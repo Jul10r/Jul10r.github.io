@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julior Dajko — Full-Stack Software Engineer</title>
+<meta name="description" content="Julior Dajko is a full-stack software engineer in Tirana, Albania. Projects, skills and experience.">
+<meta property="og:title" content="Julior Dajko — Full-Stack Software Engineer">
+<meta property="og:description" content="Full-stack web applications from the database to the interface, deployed to production.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23c84b31'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Georgia' font-weight='700' text-anchor='middle' fill='%23f4f1ea'%3EJD%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,600;9..144,0,700;9..144,1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <span aria-hidden="true">Julior Dajko · Portfolio</span>
+  <span id="coords" aria-hidden="true">x 0000 · y 0000</span>
+  <span id="clock" aria-hidden="true">Tirana</span>
+  <button type="button" class="menu-btn" aria-expanded="false" aria-controls="rail" aria-label="Open menu"><span class="bars"></span></button>
+</div>
+
+<div class="shell">
+  <aside class="rail" id="rail">
+    <div class="rail-inner">
+      <p class="rail-place"><strong>41.3275° N</strong><br>Tirana, Albania</p>
+      <nav aria-label="Sections">
+        <p class="rail-title">Contents</p>
+        <ol>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+      <div>
+        <p class="rail-title">Live projects</p>
+        <ul>
+          <li><a href="https://market-box-three.vercel.app/" target="_blank" rel="noopener noreferrer">Market-box ↗</a></li>
+          <li><a href="https://spendly-nine-pi.vercel.app/" target="_blank" rel="noopener noreferrer">Spendly ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="rail-title">Languages</p>
+        <ul><li>Albanian, native</li><li>English, C1</li></ul>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main" class="page">
+    <header class="hero">
+      <h1>Julior Dajko</h1>
+      <p class="lede">I build full-stack web applications from the database up to the interface, and ship them to production.</p>
+      <p class="hero-links"><a href="https://github.com/Jul10r" target="_blank" rel="noopener noreferrer">github.com/Jul10r</a></p>
+    </header>
+
+    <section id="about" class="block" aria-labelledby="h-about">
+      <div class="head"><span class="num">01</span><h2 id="h-about">About</h2></div>
+      <div class="about">
+        <div>
+          <p>I'm a Software Engineering Master's student at the Canadian Institute of Technology (CIT) in Tirana, with a Bachelor's degree in Mathematical Engineering and Informatics from the University of Tirana.</p>
+          <p>I build full-stack applications on my own, from schema design to the frontend, mostly in JavaScript, TypeScript, Python and Java. On the backend I use Node.js/Express and Python/Django, with React and Next.js on the frontend. My projects include authentication, real-time WebSocket messaging, sliding-window rate limiting, role-based admin dashboards, and marketplace and e-commerce features.</p>
+        </div>
+        <dl class="card">
+          <div><dt>Base</dt><dd>Tirana, Albania</dd></div>
+          <div><dt>Studying</dt><dd>M.Sc. Software Engineering, CIT</dd></div>
+          <div><dt>Main stack</dt><dd>TypeScript, Python, Java, React, Next.js, Node/Express, Django</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="projects" class="block" aria-labelledby="h-projects">
+      <div class="head"><span class="num">02</span><h2 id="h-projects">Projects</h2></div>
+      <p class="note">Hover a project, or pick a skill below, to see how they connect.</p>
+
+      <article class="project left" data-stack="Next.js,React,TypeScript,Tailwind CSS,Vercel,UploadThing,Ably,PostgreSQL,Neon,Drizzle ORM,Drizzle Kit,Clerk,Zod,Upstash Redis">
+        <header>
+          <div><h3>Market-box</h3><p class="sub">Real-time peer-to-peer marketplace</p></div>
+          <a class="live" href="https://market-box-three.vercel.app/" target="_blank" rel="noopener noreferrer">Live site ↗</a>
+        </header>
+        <div class="cols">
+          <ul>
+            <li>Built with <strong>Next.js 16</strong> (App Router, Server Actions), <strong>TypeScript</strong> and <strong>Tailwind CSS v4</strong>, deployed on <strong>Vercel</strong>.</li>
+            <li>Listings with multi-image uploads through <strong>UploadThing</strong>, full-text search, category and price filters, sorting, and active/sold status.</li>
+            <li>Buyer-to-seller chat over <strong>Ably</strong> WebSockets, scoped to each listing.</li>
+            <li><strong>PostgreSQL (Neon)</strong> schema with <strong>Drizzle ORM</strong>. Unique constraints in the database prevent duplicate and self-reviews.</li>
+            <li><strong>Clerk</strong> authentication, <strong>Zod</strong> validation and <strong>Upstash Redis</strong> sliding-window rate limiting.</li>
+          </ul>
+          <ol class="stack" aria-label="Architecture">
+            <li><span>Interface</span>Next.js, TypeScript, Tailwind</li>
+            <li><span>Real-time</span>Ably WebSockets</li>
+            <li><span>Media</span>UploadThing</li>
+            <li><span>Auth and limits</span>Clerk, Zod, Upstash Redis</li>
+            <li><span>Data</span>Drizzle ORM, PostgreSQL (Neon)</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="project right" data-stack="React,TypeScript,Node.js,Express,Drizzle ORM,Drizzle Kit,PostgreSQL,Neon,Better Auth,Zod,Cloudinary">
+        <header>
+          <div><h3>Classroom Management System</h3><p class="sub">Admin app for educational institutions</p></div>
+        </header>
+        <div class="cols">
+          <ul>
+            <li>Admin dashboard in <strong>React</strong>, <strong>TypeScript</strong> and <strong>Refine</strong>, with filterable, sortable tables and <strong>Cloudinary</strong> image uploads.</li>
+            <li>API in <strong>Node.js</strong>, <strong>Express</strong> and <strong>TypeScript</strong> on a serverless <strong>PostgreSQL (Neon)</strong> database through <strong>Drizzle ORM</strong>, with <strong>Better Auth</strong> for sign-in.</li>
+            <li>Rate limiting and bot detection with <strong>Arcjet</strong>, and request validation with <strong>Zod</strong>.</li>
+          </ul>
+          <ol class="stack" aria-label="Architecture">
+            <li><span>Interface</span>React, Refine, TypeScript</li>
+            <li><span>Media</span>Cloudinary</li>
+            <li><span>Protection</span>Arcjet, Zod</li>
+            <li><span>API and auth</span>Express, Better Auth</li>
+            <li><span>Data</span>Drizzle ORM, PostgreSQL (Neon)</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="project left" data-stack="HTML,CSS,JavaScript,Python,Django">
+        <header>
+          <div><h3>Vinero</h3><p class="sub">E-commerce platform for a wine catalog</p></div>
+        </header>
+        <div class="cols">
+          <ul>
+            <li>Frontend in <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> connected to a <strong>Python</strong> and <strong>Django</strong> backend.</li>
+            <li>Catalog search, multi-attribute filtering, product pages, checkout, and a full admin panel for managing the store.</li>
+          </ul>
+          <ol class="stack" aria-label="Architecture">
+            <li><span>Storefront</span>HTML, CSS, JavaScript</li>
+            <li><span>Catalog</span>Search, filters, checkout</li>
+            <li><span>Backend</span>Python, Django</li>
+            <li><span>Back office</span>Admin panel</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="project right" data-stack="React,JavaScript,Node.js,Express,MongoDB,Vercel">
+        <header>
+          <div><h3>Spendly</h3><p class="sub">Personal finance and expense tracker</p></div>
+          <a class="live" href="https://spendly-nine-pi.vercel.app/" target="_blank" rel="noopener noreferrer">Live site ↗</a>
+        </header>
+        <div class="cols">
+          <ul>
+            <li><strong>React</strong> dashboard for financial summaries, balances and transaction history, deployed on <strong>Vercel</strong>.</li>
+            <li>REST API in <strong>Node.js</strong> and <strong>Express</strong> with full CRUD for income and expense records.</li>
+            <li><strong>MongoDB</strong> models with user-scoped queries, input validation and secure authentication.</li>
+          </ul>
+          <ol class="stack" aria-label="Architecture">
+            <li><span>Interface</span>React dashboard</li>
+            <li><span>Logic</span>Income and expense CRUD</li>
+            <li><span>API</span>Node.js, Express</li>
+            <li><span>Data</span>MongoDB</li>
+            <li><span>Hosting</span>Vercel</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="block" aria-labelledby="h-skills">
+      <div class="head"><span class="num">03</span><h2 id="h-skills">Skills</h2></div>
+      <p class="note">Select a tool to highlight where I've used it.</p>
+      <div class="skills">
+        <div>
+          <h3>Languages</h3>
+          <div class="tags">
+            <button type="button" class="tag" data-skill="JavaScript">JavaScript</button>
+            <button type="button" class="tag" data-skill="Python">Python</button>
+            <button type="button" class="tag" data-skill="TypeScript">TypeScript</button>
+            <button type="button" class="tag" data-skill="Java">Java</button>
+            <button type="button" class="tag" data-skill="HTML">HTML</button>
+            <button type="button" class="tag" data-skill="CSS">CSS</button>
+          </div>
+        </div>
+        <div>
+          <h3>Frameworks and libraries</h3>
+          <div class="tags">
+            <button type="button" class="tag" data-skill="React">React</button>
+            <button type="button" class="tag" data-skill="Next.js">Next.js</button>
+            <button type="button" class="tag" data-skill="Node.js">Node.js</button>
+            <button type="button" class="tag" data-skill="Express">Express</button>
+            <button type="button" class="tag" data-skill="Django">Django</button>
+            <button type="button" class="tag" data-skill="Bootstrap">Bootstrap</button>
+            <button type="button" class="tag" data-skill="Tailwind CSS">Tailwind CSS</button>
+            <button type="button" class="tag" data-skill="Vite">Vite</button>
+            <button type="button" class="tag" data-skill="Drizzle ORM">Drizzle ORM</button>
+            <button type="button" class="tag" data-skill="Zod">Zod</button>
+            <button type="button" class="tag" data-skill="Clerk">Clerk</button>
+            <button type="button" class="tag" data-skill="Better Auth">Better Auth</button>
+          </div>
+        </div>
+        <div>
+          <h3>Databases and tools</h3>
+          <div class="tags">
+            <button type="button" class="tag" data-skill="PostgreSQL">PostgreSQL</button>
+            <button type="button" class="tag" data-skill="Neon">Neon</button>
+            <button type="button" class="tag" data-skill="MongoDB">MongoDB</button>
+            <button type="button" class="tag" data-skill="Appwrite">Appwrite</button>
+            <button type="button" class="tag" data-skill="Upstash Redis">Upstash Redis</button>
+            <button type="button" class="tag" data-skill="Ably">Ably</button>
+            <button type="button" class="tag" data-skill="UploadThing">UploadThing</button>
+            <button type="button" class="tag" data-skill="Cloudinary">Cloudinary</button>
+            <button type="button" class="tag" data-skill="Drizzle Kit">Drizzle Kit</button>
+            <button type="button" class="tag" data-skill="Git">Git</button>
+            <button type="button" class="tag" data-skill="GitHub">GitHub</button>
+            <button type="button" class="tag" data-skill="Vercel">Vercel</button>
+          </div>
+        </div>
+      </div>
+      <p id="status" class="status" aria-live="polite">Showing everything.</p>
+    </section>
+
+    <section id="experience" class="block" aria-labelledby="h-exp">
+      <div class="head"><span class="num">04</span><h2 id="h-exp">Experience &amp; education</h2></div>
+      <div class="two">
+        <div>
+          <h3 class="sub-head">Work</h3>
+          <article class="entry" data-stack="HTML,CSS,Bootstrap,JavaScript,Python,Django">
+            <p class="meta"><span>June 18 – July 17, 2025</span> Dominusoft Education</p>
+            <h4>Full-Stack Developer Intern</h4>
+            <ul>
+              <li>Built web applications with HTML, CSS, Bootstrap and JavaScript on the frontend, and Python with Django on the backend.</li>
+              <li>Implemented admin panels, search and other features across projects.</li>
+              <li>Made the interfaces responsive so they work on any device.</li>
+            </ul>
+          </article>
+
+          <h3 class="sub-head gap">Education</h3>
+          <article class="entry">
+            <p class="meta"><span>2025 – present</span> Canadian Institute of Technology</p>
+            <h4>M.Sc. Software Engineering</h4>
+          </article>
+          <article class="entry">
+            <p class="meta"><span>2022 – 2025</span> University of Tirana, FSHN</p>
+            <h4>B.Sc. Mathematical Engineering and Informatics</h4>
+          </article>
+        </div>
+
+        <div>
+          <h3 class="sub-head">Certificates and training</h3>
+          <ul class="certs">
+            <li><span>2026</span><div><strong>Oracle Academy (CIT)</strong><p>Java Foundations, Award of Completion</p></div></li>
+            <li><span>2026</span><div><strong>Cisco Networking Academy</strong><p>Ethical Hacker, Intermediate</p></div></li>
+            <li><span>2025</span><div><strong>Dominusoft Education</strong><p>Full-Stack Developer and Python Web Development internship</p></div></li>
+            <li><span>2024</span><div><strong>Harvard CS50</strong><p>Introduction to Programming with Python</p></div></li>
+            <li><span>FSHN</span><div><strong>University of Tirana</strong><p>20-week full-stack training: HTML, CSS, JS, .NET Web API</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="block last" aria-labelledby="h-contact">
+      <div class="head"><span class="num">05</span><h2 id="h-contact">Contact</h2></div>
+      <div class="contact">
+        <p>I'm open to software engineering roles and project collaborations, in Tirana or remote.</p>
+        <ul>
+          <li>
+            <span>Email</span>
+            <a href="mailto:juliordajko@gmail.com">juliordajko@gmail.com</a>
+            <button type="button" class="copy" data-copy="juliordajko@gmail.com">Copy</button>
+          </li>
+          <li>
+            <span>Phone</span>
+            <a href="tel:+355693283846">+355 69 32 83 846</a>
+            <button type="button" class="copy" data-copy="+355 69 32 83 846">Copy</button>
+          </li>
+          <li>
+            <span>GitHub</span>
+            <a href="https://github.com/Jul10r" target="_blank" rel="noopener noreferrer">github.com/Jul10r</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="foot"><p>© 2026 Julior Dajko</p></footer>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
