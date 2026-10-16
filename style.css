@@ -243,6 +243,20 @@ h3 { font-family: var(--display); font-size: 1.4rem; font-weight: 700; line-heig
 .live:hover { background: var(--red); color: var(--paper); }
 .live:hover::before { background: var(--paper); }
 
+.links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+
+.code {
+  padding: 0.25rem 0.65rem;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.code:hover { background: var(--gold); }
+
 .cols { display: grid; grid-template-columns: 1.4fr 0.9fr; gap: 2rem; align-items: start; }
 
 ul { padding-left: 1.15rem; display: flex; flex-direction: column; gap: 0.55rem; font-size: 0.9rem; }
