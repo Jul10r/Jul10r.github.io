@@ -8,6 +8,11 @@
 <meta property="og:title" content="Julior Dajko — Full-Stack Software Engineer">
 <meta property="og:description" content="Full-stack web applications from the database to the interface, deployed to production.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://jul10r.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Julior Dajko, full-stack software engineer">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23c84b31'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Georgia' font-weight='700' text-anchor='middle' fill='%23f4f1ea'%3EJD%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +69,7 @@
       <div class="about">
         <div>
           <p>I'm a Software Engineering Master's student at the Canadian Institute of Technology (CIT) in Tirana, with a Bachelor's degree in Mathematical Engineering and Informatics from the University of Tirana.</p>
-          <p>I build full-stack applications on my own, from schema design to the frontend, mostly in JavaScript, TypeScript, Python and Java. On the backend I use Node.js/Express and Python/Django, with React and Next.js on the frontend. My projects include authentication, real-time WebSocket messaging, sliding-window rate limiting, role-based admin dashboards, and marketplace and e-commerce features.</p>
+          <p>I build full-stack applications on my own, from schema design to the frontend, mostly in JavaScript, TypeScript, Python and Java. On the backend I use Node.js/Express and Python/Django, with React and Next.js on the frontend. My projects include authentication, real-time WebSocket messaging, sliding-window rate limiting, admin dashboards, and marketplace and storefront features.</p>
         </div>
         <dl class="card">
           <div><dt>Base</dt><dd>Tirana, Albania</dd></div>
@@ -83,16 +88,16 @@
           <div><h3>Market-box</h3><p class="sub">Real-time peer-to-peer marketplace</p></div>
         <div class="links">
           <a class="live" href="https://market-box-three.vercel.app/" target="_blank" rel="noopener noreferrer">Live site ↗</a>
-          <a class="code" href="https://github.com/Jul10r/Market-box" target="_blank" rel="noopener noreferrer">Source code ↗</a>
+          <a class="code" href="https://github.com/Jul10r/Market-box" target="_blank" rel="noopener noreferrer">Source ↗</a>
         </div>
         </header>
         <div class="cols">
           <ul>
-            <li>Built with <strong>Next.js 16</strong> (App Router, Server Actions), <strong>TypeScript</strong> and <strong>Tailwind CSS v4</strong>, deployed on <strong>Vercel</strong>.</li>
-            <li>Listings with multi-image uploads through <strong>UploadThing</strong>, full-text search, category and price filters, sorting, and active/sold status.</li>
-            <li>Buyer-to-seller chat over <strong>Ably</strong> WebSockets, scoped to each listing.</li>
-            <li><strong>PostgreSQL (Neon)</strong> schema with <strong>Drizzle ORM</strong>. Unique constraints in the database prevent duplicate and self-reviews.</li>
-            <li><strong>Clerk</strong> authentication, <strong>Zod</strong> validation and <strong>Upstash Redis</strong> sliding-window rate limiting.</li>
+            <li><strong>Next.js 16</strong> (App Router, Server Actions), <strong>TypeScript</strong> and <strong>Tailwind CSS v4</strong>, deployed on <strong>Vercel</strong>.</li>
+            <li>Listings with multi-image uploads (<strong>UploadThing</strong>), full-text search, category and price filters, sorting, and active/sold status.</li>
+            <li>Buyer-to-seller chat over <strong>Ably</strong> WebSockets, one conversation per listing.</li>
+            <li>Reviews with 1-5 star ratings and seller reputation. Duplicate reviews are blocked by a <strong>Postgres</strong> unique constraint, and sellers can’t review their own listings.</li>
+            <li><strong>Clerk</strong> authentication, <strong>Zod</strong> validation on every server action, and <strong>Upstash Redis</strong> sliding-window rate limiting on listings, messages and reviews.</li>
           </ul>
           <ol class="stack" aria-label="Architecture">
             <li><span>Interface</span>Next.js, TypeScript, Tailwind</li>
@@ -104,17 +109,17 @@
         </div>
       </article>
 
-      <article class="project right" data-stack="React,TypeScript,Node.js,Express,Drizzle ORM,Drizzle Kit,PostgreSQL,Neon,Better Auth,Zod,Cloudinary">
+      <article class="project right" data-stack="React,TypeScript,Vite,Tailwind CSS,Node.js,Express,Drizzle ORM,Drizzle Kit,PostgreSQL,Neon,Better Auth,Zod,Cloudinary">
         <header>
           <div><h3>Classroom Management System</h3><p class="sub">Admin app for educational institutions</p></div>
         <div class="links">
-          <a class="code" href="https://github.com/Jul10r/classroom" target="_blank" rel="noopener noreferrer">Source code ↗</a>
+          <a class="code" href="https://github.com/Jul10r/classroom" target="_blank" rel="noopener noreferrer">Source ↗</a>
         </div></header>
         <div class="cols">
           <ul>
-            <li>Admin dashboard in <strong>React</strong>, <strong>TypeScript</strong> and <strong>Refine</strong>, with filterable, sortable tables and <strong>Cloudinary</strong> image uploads.</li>
-            <li>API in <strong>Node.js</strong>, <strong>Express</strong> and <strong>TypeScript</strong> on a serverless <strong>PostgreSQL (Neon)</strong> database through <strong>Drizzle ORM</strong>, with <strong>Better Auth</strong> for sign-in.</li>
-            <li>Rate limiting and bot detection with <strong>Arcjet</strong>, and request validation with <strong>Zod</strong>.</li>
+            <li>Admin dashboard in <strong>React</strong>, <strong>TypeScript</strong> and <strong>Refine</strong> for managing classes, subjects, departments and teachers, with server-side search, filtering and pagination.</li>
+            <li><strong>Express</strong> and <strong>TypeScript</strong> API on <strong>Neon PostgreSQL</strong> through <strong>Drizzle ORM</strong>, with <strong>Better Auth</strong> for sign-in and <strong>Zod</strong> request validation.</li>
+            <li><strong>Arcjet</strong> rate limiting and bot protection, and <strong>Cloudinary</strong> uploads for class banners.</li>
           </ul>
           <ol class="stack" aria-label="Architecture">
             <li><span>Interface</span>React, Refine, TypeScript</li>
@@ -128,44 +133,44 @@
 
       <article class="project left" data-stack="HTML,CSS,JavaScript,Python,Django">
         <header>
-          <div><h3>Vinero</h3><p class="sub">E-commerce platform for a wine catalog</p></div>
+          <div><h3>Vinero</h3><p class="sub">Wine storefront prototype</p></div>
         <div class="links">
-          <a class="code" href="https://github.com/Jul10r/Vinero" target="_blank" rel="noopener noreferrer">Source code ↗</a>
+          <a class="code" href="https://github.com/Jul10r/Vinero" target="_blank" rel="noopener noreferrer">Source ↗</a>
         </div></header>
         <div class="cols">
           <ul>
-            <li>Frontend in <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> connected to a <strong>Python</strong> and <strong>Django</strong> backend.</li>
-            <li>Catalog search, multi-attribute filtering, product pages, checkout, and a full admin panel for managing the store.</li>
+            <li>Albanian-language storefront built with <strong>Django</strong>: product catalogue, winery and events pages, and a checkout form that saves orders to the database.</li>
+            <li><strong>Django Admin</strong> for managing products, categories and orders, plus stored newsletter signups.</li>
           </ul>
           <ol class="stack" aria-label="Architecture">
             <li><span>Storefront</span>HTML, CSS, JavaScript</li>
-            <li><span>Catalog</span>Search, filters, checkout</li>
+            <li><span>Catalog</span>Products, checkout form</li>
             <li><span>Backend</span>Python, Django</li>
             <li><span>Back office</span>Admin panel</li>
           </ol>
         </div>
       </article>
 
-      <article class="project right" data-stack="React,JavaScript,Node.js,Express,MongoDB,Vercel">
+      <article class="project right" data-stack="React,JavaScript,Vite,Tailwind CSS,Node.js,Express,MongoDB,Vercel">
         <header>
           <div><h3>Spendly</h3><p class="sub">Personal finance and expense tracker</p></div>
         <div class="links">
           <a class="live" href="https://spendly-nine-pi.vercel.app/" target="_blank" rel="noopener noreferrer">Live site ↗</a>
-          <a class="code" href="https://github.com/Jul10r/Spendly" target="_blank" rel="noopener noreferrer">Source code ↗</a>
+          <a class="code" href="https://github.com/Jul10r/Spendly" target="_blank" rel="noopener noreferrer">Source ↗</a>
         </div>
         </header>
         <div class="cols">
           <ul>
-            <li><strong>React</strong> dashboard for financial summaries, balances and transaction history, deployed on <strong>Vercel</strong>.</li>
-            <li>REST API in <strong>Node.js</strong> and <strong>Express</strong> with full CRUD for income and expense records.</li>
-            <li><strong>MongoDB</strong> models with user-scoped queries, input validation and secure authentication.</li>
+            <li><strong>React</strong> dashboard for balances, income and expense totals, category breakdown and transaction history, deployed on <strong>Vercel</strong>.</li>
+            <li><strong>Express</strong> REST API with <strong>MongoDB</strong>, where every query is scoped to the signed-in user.</li>
+            <li>Email verification with 6-digit codes, <strong>bcrypt</strong> password hashing, <strong>JWT</strong> sessions, and rate-limited auth routes.</li>
           </ul>
           <ol class="stack" aria-label="Architecture">
             <li><span>Interface</span>React dashboard</li>
-            <li><span>Logic</span>Income and expense CRUD</li>
+            <li><span>Logic</span>Income and expense tracking</li>
             <li><span>API</span>Node.js, Express</li>
             <li><span>Data</span>MongoDB</li>
-            <li><span>Hosting</span>Vercel</li>
+            <li><span>Hosting</span>Vercel (frontend), Render (API)</li>
           </ol>
         </div>
       </article>
@@ -272,11 +277,6 @@
             <span>Email</span>
             <a href="mailto:juliordajko@gmail.com">juliordajko@gmail.com</a>
             <button type="button" class="copy" data-copy="juliordajko@gmail.com">Copy</button>
-          </li>
-          <li>
-            <span>Phone</span>
-            <a href="tel:+355693283846">+355 69 32 83 846</a>
-            <button type="button" class="copy" data-copy="+355 69 32 83 846">Copy</button>
           </li>
           <li>
             <span>GitHub</span>
